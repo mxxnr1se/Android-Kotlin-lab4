@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.lab4.MainActivity">
+
+    <Button
+        android:id="@+id/chooseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="pick"
+        android:text="@string/choose_file"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/video_url"
+            android:layout_width="235dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:autofillHints=""
+            android:hint="@string/enter_url"
+            android:inputType="textUri" />
+
+        <Button
+            android:id="@+id/findVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:onClick="find"
+            android:text="@string/find"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/playButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:onClick="play"
+            android:text="@string/play" />
+
+        <Button
+            android:id="@+id/pauseButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:onClick="pause"
+            android:text="@string/pause" />
+
+        <Button
+            android:id="@+id/stopButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:onClick="stop"
+            android:text="@string/stop" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

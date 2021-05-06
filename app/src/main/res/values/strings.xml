@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lab4</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="choose_file">Choose file</string>
+    <string name="find">Find</string>
+    <string name="enter_url">Enter url</string>
+</resources>
